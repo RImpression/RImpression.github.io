@@ -14,11 +14,13 @@
 <meta property="og:site_name" content="Rim's Blog">
 <meta property="og:description" content="00X0 前言市面上的APP，整体框架不外乎两种，一种是底部菜单栏，一种是TabLayout+侧滑菜单。前者是在国内最常见的方式，能看得见的就不要隐藏起来。后者则是谷歌MD风格中推行的，虽然在国内很难推行起来，但是也有不少APP仍然坚持着。
 本次，博主主要实现底部菜单栏，下一篇文章在实现侧滑菜单。虽然网上有着众多的资源，实现的方式也很多，但博主不为的，只为提高开发效率，以后用着就直接拿来用就好了，">
-<meta property="og:updated_time" content="2016-05-05T00:50:55.987Z">
+<meta property="og:image" content="https://RImpression.github.io/images/bottom_layout.png">
+<meta property="og:updated_time" content="2016-05-12T01:11:46.865Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="底部菜单栏的实现">
 <meta name="twitter:description" content="00X0 前言市面上的APP，整体框架不外乎两种，一种是底部菜单栏，一种是TabLayout+侧滑菜单。前者是在国内最常见的方式，能看得见的就不要隐藏起来。后者则是谷歌MD风格中推行的，虽然在国内很难推行起来，但是也有不少APP仍然坚持着。
 本次，博主主要实现底部菜单栏，下一篇文章在实现侧滑菜单。虽然网上有着众多的资源，实现的方式也很多，但博主不为的，只为提高开发效率，以后用着就直接拿来用就好了，">
+<meta name="twitter:image" content="https://RImpression.github.io/images/bottom_layout.png">
   
     <link rel="alternative" href="/atom.xml" title="Rim&#39;s Blog" type="application/atom+xml">
   
@@ -36,7 +38,7 @@
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img lazy-src="https://github.com/RImpression/RImpression.github.io/blob/master/img/avatar2.png" class="js-avatar">
+			<img lazy-src="/images/avatar2.png" class="js-avatar">
 			
 		</a>
 
@@ -81,7 +83,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -164,7 +166,7 @@
 		<header id="header" class="inner">
 			<div class="profilepic">
 			
-				<img lazy-src="https://github.com/RImpression/RImpression.github.io/blob/master/img/avatar2.png" class="js-avatar">
+				<img lazy-src="/images/avatar2.png" class="js-avatar">
 			
 			</div>
 			<hgroup>
@@ -238,6 +240,7 @@
 </ul>
 <p>本次实现的是RedioGroup方式。</p>
 <p>界面截图如下：</p>
+<p><img src="/images/bottom_layout.png" alt=""></p>
 <h2 id="00X2-代码结构"><a href="#00X2-代码结构" class="headerlink" title="00X2 代码结构"></a>00X2 代码结构</h2><h4 id="java"><a href="#java" class="headerlink" title="java"></a>java</h4><blockquote>
 <p>Main2Activity.java</p>
 <p>FragmentFirst.java</p>
@@ -299,6 +302,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/05/12/侧滑菜单实现/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          侧滑菜单与TabLayout的实现
+        
+      </div>
+    </a>
   
   
     <a href="/2016/04/24/hello-world/" id="article-nav-older" class="article-nav-link-wrap">

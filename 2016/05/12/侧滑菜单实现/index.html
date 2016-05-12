@@ -4,17 +4,50 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Rim&#39;s Blog</title>
+  <title>侧滑菜单与TabLayout的实现 | Rim&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录点滴学习历程">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Rim's Blog">
-<meta property="og:url" content="https://RImpression.github.io/index.html">
+  <meta name="description" content="##00X0 前言在上一篇中文章中，我们介绍了底部菜单栏的实现，本文，我们再来实现侧滑菜单。由于谷歌是大力推行侧边栏的，作为谷歌的亲儿子，自然实现起来更容易，有现成的模板，不像底部菜单栏一样需要自己编写样式，导致网上有很多实现的方法。
+##00X1 运行效果
+##00X2 代码结构
+####java
+
+MainActivity.java
+FragmentAdapter
+
+####layout
+
+a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="侧滑菜单与TabLayout的实现">
+<meta property="og:url" content="https://RImpression.github.io/2016/05/12/侧滑菜单实现/index.html">
 <meta property="og:site_name" content="Rim's Blog">
-<meta property="og:description" content="记录点滴学习历程">
+<meta property="og:description" content="##00X0 前言在上一篇中文章中，我们介绍了底部菜单栏的实现，本文，我们再来实现侧滑菜单。由于谷歌是大力推行侧边栏的，作为谷歌的亲儿子，自然实现起来更容易，有现成的模板，不像底部菜单栏一样需要自己编写样式，导致网上有很多实现的方法。
+##00X1 运行效果
+##00X2 代码结构
+####java
+
+MainActivity.java
+FragmentAdapter
+
+####layout
+
+a">
+<meta property="og:image" content="https://RImpression.github.io/images/nav_layout.png">
+<meta property="og:updated_time" content="2016-05-12T01:29:02.910Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Rim's Blog">
-<meta name="twitter:description" content="记录点滴学习历程">
+<meta name="twitter:title" content="侧滑菜单与TabLayout的实现">
+<meta name="twitter:description" content="##00X0 前言在上一篇中文章中，我们介绍了底部菜单栏的实现，本文，我们再来实现侧滑菜单。由于谷歌是大力推行侧边栏的，作为谷歌的亲儿子，自然实现起来更容易，有现成的模板，不像底部菜单栏一样需要自己编写样式，导致网上有很多实现的方法。
+##00X1 运行效果
+##00X2 代码结构
+####java
+
+MainActivity.java
+FragmentAdapter
+
+####layout
+
+a">
+<meta name="twitter:image" content="https://RImpression.github.io/images/nav_layout.png">
   
     <link rel="alternative" href="/atom.xml" title="Rim&#39;s Blog" type="application/atom+xml">
   
@@ -192,9 +225,7 @@
 	</div>
 </nav>
 
-      <div class="body-wrap">
-  
-    <article id="post-侧滑菜单实现" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-侧滑菜单实现" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/05/12/侧滑菜单实现/" class="article-date">
@@ -210,12 +241,19 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/12/侧滑菜单实现/">侧滑菜单与TabLayout的实现</a>
+    <h1 class="article-title" itemprop="name">
+      侧滑菜单与TabLayout的实现
     </h1>
   
 
       </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
       
     
     <div class="article-entry" itemprop="articleBody">
@@ -259,205 +297,68 @@
       
     </div>
     
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/05/底部菜单栏实现/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">底部菜单栏的实现</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
   
 </article>
 
 
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
 
 
 
 
 
-
-  
-    <article id="post-底部菜单栏实现" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/05/底部菜单栏实现/" class="article-date">
-  	<time datetime="2016-05-05T00:30:02.121Z" itemprop="datePublished">2016-05-05</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/05/底部菜单栏实现/">底部菜单栏的实现</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="00X0-前言"><a href="#00X0-前言" class="headerlink" title="00X0 前言"></a>00X0 前言</h2><p>市面上的APP，整体框架不外乎两种，一种是底部菜单栏，一种是TabLayout+侧滑菜单。前者是在国内最常见的方式，能看得见的就不要隐藏起来。后者则是谷歌MD风格中推行的，虽然在国内很难推行起来，但是也有不少APP仍然坚持着。</p>
-<p>本次，博主主要实现底部菜单栏，下一篇文章在实现侧滑菜单。虽然网上有着众多的资源，实现的方式也很多，但博主不为的，只为提高开发效率，以后用着就直接拿来用就好了，节省时间。</p>
-<h2 id="00X1-运行效果"><a href="#00X1-运行效果" class="headerlink" title="00X1 运行效果"></a>00X1 运行效果</h2><p>底部菜单栏的实现方式有多种，主要由以下两种方式：</p>
-<ul>
-<li>ImageView+TextView</li>
-<li>RedioGroup</li>
-</ul>
-<p>本次实现的是RedioGroup方式。</p>
-<p>界面截图如下：</p>
-<p><img src="/images/bottom_layout.png" alt=""></p>
-<h2 id="00X2-代码结构"><a href="#00X2-代码结构" class="headerlink" title="00X2 代码结构"></a>00X2 代码结构</h2><h4 id="java"><a href="#java" class="headerlink" title="java"></a>java</h4><blockquote>
-<p>Main2Activity.java</p>
-<p>FragmentFirst.java</p>
-<p>FragmentSecond.java</p>
-<p>FragmentThird.java</p>
-<p>FragmentFourth.java</p>
-</blockquote>
-<h4 id="layout"><a href="#layout" class="headerlink" title="layout"></a>layout</h4><blockquote>
-<p>activity_main2.xml</p>
-<p>content_main2.xml</p>
-<p>fragment_first.xml</p>
-<p>fragment_second.xml</p>
-<p>fragment_third.xml</p>
-<p>fragment_fourth.xml</p>
-</blockquote>
-<h4 id="drawable"><a href="#drawable" class="headerlink" title="drawable"></a>drawable</h4><blockquote>
-<p>tab_menu_bg.xml</p>
-<p>tab_meun_check.xml</p>
-<p>tab_menu_text.xml</p>
-<p>tab_menu_monitor.xml</p>
-<p>tab_menu_myself.xml</p>
-<p>tab_menu_more.xml</p>
-</blockquote>
-<h4 id="styles"><a href="#styles" class="headerlink" title="styles"></a>styles</h4><blockquote>
-<p>styles.xml</p>
-</blockquote>
-<h2 id="00X3-代码详情"><a href="#00X3-代码详情" class="headerlink" title="00X3 代码详情"></a>00X3 代码详情</h2><h4 id="drawable-1"><a href="#drawable-1" class="headerlink" title="drawable"></a>drawable</h4><p>drawable主要用来监听四个菜单图标的状态、文字显示状态以及背景。</p>
-<h5 id="tab-menu-bg-xml"><a href="#tab-menu-bg-xml" class="headerlink" title="tab_menu_bg.xml"></a>tab_menu_bg.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">selector</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:state_selected</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">shape</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">solid</span> <span class="attr">android:color</span>=<span class="string">"#FFFAFA"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">shape</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">solid</span> <span class="attr">android:color</span>=<span class="string">"#FFFAFA"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">selector</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h5 id="tab-menu-text-xml"><a href="#tab-menu-text-xml" class="headerlink" title="tab_menu_text.xml"></a>tab_menu_text.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">selector</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:color</span>=<span class="string">"#56abe4"</span> <span class="attr">android:state_checked</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:color</span>=<span class="string">"#a9b7b7"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">selector</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h5 id="tab-menu-check-xml"><a href="#tab-menu-check-xml" class="headerlink" title="tab_menu_check.xml"></a>tab_menu_check.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">selector</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@mipmap/menu_check_press"</span> <span class="attr">android:state_checked</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">item</span> <span class="attr">android:drawable</span>=<span class="string">"@mipmap/menu_check_normal"</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">selector</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>ps:其他三个xml与tab_menu_check.xml相同，均为监听菜单点击状态，将图片替换即可，这里不展示。</p>
-</blockquote>
-<h4 id="styles-1"><a href="#styles-1" class="headerlink" title="styles"></a>styles</h4><p>这里将菜单的相同风格抽取出来，下面main_activity2.xml用到。</p>
-<h5 id="styles-xml"><a href="#styles-xml" class="headerlink" title="styles.xml"></a>styles.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">name</span>=<span class="string">"tab_menu_item"</span>&gt;</span><span class="xml"></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:layout_width"</span>&gt;</span>0dp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:layout_weight"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:layout_height"</span>&gt;</span>match_parent<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:background"</span>&gt;</span>@drawable/tab_menu_bg<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:button"</span>&gt;</span>@null<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:gravity"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:paddingTop"</span>&gt;</span>3dp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:textColor"</span>&gt;</span>@drawable/tab_menu_text<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">item</span> <span class="attr">name</span>=<span class="string">"android:textSize"</span>&gt;</span>16sp<span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line">   </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="layout-1"><a href="#layout-1" class="headerlink" title="layout"></a>layout</h4><p>几个简单布局的实现</p>
-<h5 id="content-main2-xml"><a href="#content-main2-xml" class="headerlink" title="content_main2.xml"></a>content_main2.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></span><br><span class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span><br><span class="line">    <span class="attr">tools:showIn</span>=<span class="string">"@layout/activity_main2"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">RadioGroup</span></span><br><span class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/rgTabbar"</span></span><br><span class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span><br><span class="line">        <span class="attr">android:layout_alignParentBottom</span>=<span class="string">"true"</span></span><br><span class="line">        <span class="attr">android:orientation</span>=<span class="string">"horizontal"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">RadioButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/tab_menu_first"</span></span><br><span class="line">            <span class="attr">style</span>=<span class="string">"@style/tab_menu_item"</span></span><br><span class="line">            <span class="attr">android:drawableTop</span>=<span class="string">"@drawable/tab_menu_check"</span></span><br><span class="line">            <span class="attr">android:text</span>=<span class="string">"查询"</span></span><br><span class="line">            <span class="attr">android:checked</span>=<span class="string">"false"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">RadioButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/tab_menu_second"</span></span><br><span class="line">            <span class="attr">style</span>=<span class="string">"@style/tab_menu_item"</span></span><br><span class="line">            <span class="attr">android:drawableTop</span>=<span class="string">"@drawable/tab_menu_monitor"</span></span><br><span class="line">            <span class="attr">android:text</span>=<span class="string">"监控"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">RadioButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/tab_menu_third"</span></span><br><span class="line">            <span class="attr">style</span>=<span class="string">"@style/tab_menu_item"</span></span><br><span class="line">            <span class="attr">android:drawableTop</span>=<span class="string">"@drawable/tab_menu_myself"</span></span><br><span class="line">            <span class="attr">android:text</span>=<span class="string">"个人"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">RadioButton</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/tab_menu_forth"</span></span><br><span class="line">            <span class="attr">style</span>=<span class="string">"@style/tab_menu_item"</span></span><br><span class="line">            <span class="attr">android:drawableTop</span>=<span class="string">"@drawable/tab_menu_more"</span></span><br><span class="line">            <span class="attr">android:text</span>=<span class="string">"更多"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">RadioGroup</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">View</span></span><br><span class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/div_tab_bar"</span></span><br><span class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:layout_height</span>=<span class="string">"2px"</span></span><br><span class="line">        <span class="attr">android:layout_above</span>=<span class="string">"@id/rgTabbar"</span></span><br><span class="line">        <span class="attr">android:background</span>=<span class="string">"#FFFFFF"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">FrameLayout</span></span><br><span class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/ly_content"</span></span><br><span class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:layout_above</span>=<span class="string">"@id/div_tab_bar"</span></span><br><span class="line">        <span class="attr">android:layout_marginTop</span>=<span class="string">"?attr/actionBarSize"</span>&gt;</span><span class="tag">&lt;/<span class="name">FrameLayout</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h5 id="activity-main2-xml"><a href="#activity-main2-xml" class="headerlink" title="activity_main2.xml"></a>activity_main2.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">android.support.design.widget.CoordinatorLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">    <span class="attr">xmlns:app</span>=<span class="string">"http://schemas.android.com/apk/res-auto"</span></span><br><span class="line">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></span><br><span class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span><br><span class="line">    <span class="attr">android:fitsSystemWindows</span>=<span class="string">"true"</span></span><br><span class="line">    <span class="attr">tools:context</span>=<span class="string">"com.example.mainview2.Main2Activity"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">android.support.design.widget.AppBarLayout</span></span><br><span class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span><br><span class="line">        <span class="attr">android:theme</span>=<span class="string">"@style/AppTheme.AppBarOverlay"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="tag">&lt;<span class="name">android.support.v7.widget.Toolbar</span></span><br><span class="line">            <span class="attr">android:id</span>=<span class="string">"@+id/toolbar"</span></span><br><span class="line">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">            <span class="attr">android:layout_height</span>=<span class="string">"?attr/actionBarSize"</span></span><br><span class="line">            <span class="attr">android:background</span>=<span class="string">"?attr/colorPrimary"</span></span><br><span class="line">            <span class="attr">app:popupTheme</span>=<span class="string">"@style/AppTheme.PopupOverlay"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">android.support.design.widget.AppBarLayout</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">include</span> <span class="attr">layout</span>=<span class="string">"@layout/content_main2"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">android.support.design.widget.CoordinatorLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<h5 id="fragment-first-xml"><a href="#fragment-first-xml" class="headerlink" title="fragment_first.xml"></a>fragment_first.xml</h5><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">FrameLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span><br><span class="line">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></span><br><span class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span><br><span class="line">    <span class="attr">tools:context</span>=<span class="string">"com.example.mainview2.FragmentFirst"</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">TextView</span></span><br><span class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span><br><span class="line">        <span class="attr">android:text</span>=<span class="string">"this is the first fragment"</span> /&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">FrameLayout</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>ps:类似，几个fragment的布局以自己项目而定，这里不贴代码。</p>
-</blockquote>
-<h4 id="java-1"><a href="#java-1" class="headerlink" title="java"></a>java</h4><p>Main2Activity.java为主要代码，实现几个fragment的控制.fragment同样只简单贴一个的代码。</p>
-<h5 id="Main2Activity-java"><a href="#Main2Activity-java" class="headerlink" title="Main2Activity.java"></a>Main2Activity.java</h5><blockquote>
-<p>这里要注意的是Fragment导入的包为app,而’<strong>不是V4包</strong>‘</p>
-</blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> android.app.FragmentManager;</span><br><span class="line"><span class="keyword">import</span> android.app.FragmentTransaction;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.support.v7.app.AppCompatActivity;</span><br><span class="line"><span class="keyword">import</span> android.support.v7.widget.Toolbar;</span><br><span class="line"><span class="keyword">import</span> android.widget.RadioButton;</span><br><span class="line"><span class="keyword">import</span> android.widget.RadioGroup;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.example.mainview.R;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main2Activity</span> <span class="keyword">extends</span> <span class="title">AppCompatActivity</span> <span class="keyword">implements</span> <span class="title">RadioGroup</span>.<span class="title">OnCheckedChangeListener</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> RadioGroup rgTabbar;</span><br><span class="line">    <span class="keyword">private</span> RadioButton rb_first;</span><br><span class="line">    <span class="keyword">private</span> FragmentManager fragmentManager;</span><br><span class="line">    <span class="comment">//四个Fragment</span></span><br><span class="line">    <span class="keyword">private</span> FragmentFirst fragmentFirst;</span><br><span class="line">    <span class="keyword">private</span> FragmentSecond fragmentSecond;</span><br><span class="line">    <span class="keyword">private</span> FragmentThird fragmentThird;</span><br><span class="line">    <span class="keyword">private</span> FragmentFourth fragmentFourth;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</span><br><span class="line">        setContentView(R.layout.activity_main2);</span><br><span class="line">        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);</span><br><span class="line">        setSupportActionBar(toolbar);</span><br><span class="line"></span><br><span class="line">        fragmentManager = getFragmentManager();</span><br><span class="line">        rgTabbar = (RadioGroup) findViewById(R.id.rgTabbar);</span><br><span class="line">        rgTabbar.setOnCheckedChangeListener(<span class="keyword">this</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">//获取第一个单选按钮，并设置其为选中状态</span></span><br><span class="line">        rb_first = (RadioButton) findViewById(R.id.tab_menu_first);</span><br><span class="line">        rb_first.setChecked(<span class="keyword">true</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onCheckedChanged</span><span class="params">(RadioGroup arg0, <span class="keyword">int</span> arg1)</span> </span>&#123;</span><br><span class="line">        FragmentTransaction fTransaction = fragmentManager.beginTransaction();</span><br><span class="line">        hideAllFragment(fTransaction);</span><br><span class="line">        <span class="keyword">switch</span> (arg1) &#123;</span><br><span class="line">            <span class="keyword">case</span> R.id.tab_menu_first:</span><br><span class="line">                <span class="keyword">if</span>(fragmentFirst == <span class="keyword">null</span>)&#123;</span><br><span class="line">                    fragmentFirst = <span class="keyword">new</span> FragmentFirst();</span><br><span class="line">                    fTransaction.add(R.id.ly_content, fragmentFirst);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    fTransaction.show(fragmentFirst);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">case</span> R.id.tab_menu_second:</span><br><span class="line">                <span class="keyword">if</span>(fragmentSecond == <span class="keyword">null</span>)&#123;</span><br><span class="line">                    fragmentSecond = <span class="keyword">new</span> FragmentSecond();</span><br><span class="line">                    fTransaction.add(R.id.ly_content, fragmentSecond);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    fTransaction.show(fragmentSecond);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">case</span> R.id.tab_menu_third:</span><br><span class="line">                <span class="keyword">if</span>(fragmentThird == <span class="keyword">null</span>)&#123;</span><br><span class="line">                    fragmentThird = <span class="keyword">new</span> FragmentThird();</span><br><span class="line">                    fTransaction.add(R.id.ly_content, fragmentThird);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    fTransaction.show(fragmentThird);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">case</span> R.id.tab_menu_forth:</span><br><span class="line">                <span class="keyword">if</span>(fragmentFourth == <span class="keyword">null</span>)&#123;</span><br><span class="line">                    fragmentFourth = <span class="keyword">new</span> FragmentFourth();</span><br><span class="line">                    fTransaction.add(R.id.ly_content, fragmentFourth);</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    fTransaction.show(fragmentFourth);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        fTransaction.commit();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//隐藏所有Fragment</span></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title">hideAllFragment</span><span class="params">(FragmentTransaction fTransaction)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(fragmentFirst != <span class="keyword">null</span>)fTransaction.hide(fragmentFirst);</span><br><span class="line">        <span class="keyword">if</span>(fragmentSecond != <span class="keyword">null</span>)fTransaction.hide(fragmentSecond);</span><br><span class="line">        <span class="keyword">if</span>(fragmentThird != <span class="keyword">null</span>)fTransaction.hide(fragmentThird);</span><br><span class="line">        <span class="keyword">if</span>(fragmentFourth != <span class="keyword">null</span>)fTransaction.hide(fragmentFourth);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h5 id="FragmentFirst-java"><a href="#FragmentFirst-java" class="headerlink" title="FragmentFirst.java"></a>FragmentFirst.java</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> android.app.Fragment;</span><br><span class="line"><span class="keyword">import</span> android.os.Bundle;</span><br><span class="line"><span class="keyword">import</span> android.view.LayoutInflater;</span><br><span class="line"><span class="keyword">import</span> android.view.View;</span><br><span class="line"><span class="keyword">import</span> android.view.ViewGroup;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.example.mainview.R;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">FragmentFirst</span> <span class="keyword">extends</span> <span class="title">Fragment</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> View <span class="title">onCreateView</span><span class="params">(LayoutInflater inflater, ViewGroup container,</span><br><span class="line">                             Bundle savedInstanceState)</span> </span>&#123;</span><br><span class="line">        <span class="comment">// Inflate the layout for this fragment</span></span><br><span class="line">        <span class="keyword">return</span> inflater.inflate(R.layout.fragment_first, container, <span class="keyword">false</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="00X4-扩展知识"><a href="#00X4-扩展知识" class="headerlink" title="00X4 扩展知识"></a>00X4 扩展知识</h2><p>最后，介绍两个非常炫的底部菜单栏的开源库，个人非常喜欢，但是在市面上暂时未发现相应的APP，可能商业化的APP的局限性比较高，不轻易采用这种酷炫的动画，但是作为个人项目可以学习万万。</p>
-<ul>
-<li><a href="https://github.com/armcha/LuseenBottomNavigation" target="_blank" rel="external">Material Bottom Navigation</a></li>
-<li><a href="https://github.com/DevLight-Mobile-Agency/NavigationTabBar" target="_blank" rel="external">NavigationTabBar</a></li>
-</ul>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="侧滑菜单实现" data-title="侧滑菜单与TabLayout的实现" data-url="https://RImpression.github.io/2016/05/12/侧滑菜单实现/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
 
 
 
 
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/04/24/hello-world/" class="article-date">
-  	<time datetime="2016-04-24T12:24:22.564Z" itemprop="datePublished">2016-04-24</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/24/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-  
 </div>
       <footer id="footer">
   <div class="outer">
@@ -481,8 +382,8 @@
 		fancybox: true,
 		mathjax: true,
 		animate: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
